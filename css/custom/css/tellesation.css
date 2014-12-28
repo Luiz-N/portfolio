@@ -1,0 +1,82 @@
+#canvas {
+  /*background-image: url("http://f.cl.ly/items/332n1e1L002z2q241v1e/Screen%20Shot%202014-12-05%20at%202.28.17%20PM.png");*/
+  /*background-image: url("http://destroytoday.com/assets/fiftythree-mobile.jpg");*/
+  /*background-image: url("http://speldwright.com/wp-content/uploads/bancu_logo.jpg");*/
+  background-size: stretch;
+  /*height: 800px;*/
+}
+
+/*#canvas  {*/
+rect {
+  fill:none;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+g:first-child path {
+  /*fill: salmon;*/
+  /*fill: white;*/
+  /*fill:white;*/
+  /*fill-opacity: .2*/
+}
+
+g:nth-child(3) path {
+  /*fill: teal;*/
+  /*fill:black;*/
+  /*fill: white;*/
+  /*stroke: grey;*/
+  /*fill-opacity: .4;*/
+}
+
+path {
+  pointer: none;
+  /*stroke: rgba(34,34,34,.25);*/
+  stroke: grey;
+  /*mix-blend-mode: screen;*/
+  /*filter: url(#blend);*/
+  /*stroke: red;*/
+    /*stroke: red;*/
+  /*stroke-dasharray: 5 2.5;*/
+  fill: none;
+  /*fill: teal;*/
+  /*fill: MediumTurquoise;*/
+  /*fill: darkgreen;*/
+  /*fill: black;*/
+  fill-opacity: .2;
+  stroke-opacity: .2;
+  stroke-linejoin: round;
+}
+ 
+g path:first-child {
+  /*mix-blend-mode: darken;*/
+
+  /*fill: salmon;*/
+  /*stroke: none;*/
+  stroke-opacity: .4;
+}
+
+
+g path:nth-child(4n) {
+  /*fill: rgba(34,34,34,0);*/
+  fill: #3A89C9;
+  /*stroke: none;*/
+}
+
+g path:nth-child(odd) {
+  /*fill: salmon;*/
+  /*stroke: none;*/
+}
+
+/*g path:nth-child(4) {
+  fill: salmon;
+  stroke: none;
+}
+
+g path:last-child {
+  fill: rgba(34,34,34,0);
+  fill: teal;
+  stroke: none;
+}*/
+
+
+
