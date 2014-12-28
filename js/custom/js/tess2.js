@@ -76,7 +76,7 @@ buildTess = function(width,height){
         })
         .on('mouseleave', function() {
           console.log("mouseleave");
-          // animate  = setInterval(function(){render();}, 5);
+          animate  = setInterval(function(){render();}, 5);
         })
         .call(drag);
       path = svg.append("g").selectAll("path");

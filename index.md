@@ -15,11 +15,11 @@ title: "Luiz Neves"
 	<div id="About" class="container">
 		<div  class="info section">
 			<h1>Hi, there.</h1>
-			<p class="teaser">I'm a creative full-stack web developer</p>
+			<p class="teaser">I'm a creative, full-stack web developer</p>
 			<hr>
 			<div class="text">
 				<h2>About Me</h2>
-				<p>I specacalize in data-centric web applications. Everything from scraping, transforming, to visualizing data. I also enjoy getting creative with code like the fancy visualization you see above.</p>
+				<p>I specialize in data-centric web applications; everything from scraping, transforming, to visualizing data. I also enjoy getting creative with code like the fancy visualization you see above.</p>
 			</div>
 			<div class="image">
 				<img src="images/me.png" alt="">
