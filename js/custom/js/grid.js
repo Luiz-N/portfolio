@@ -300,7 +300,7 @@ var Grid = (function() {
 		if( typeof preview != 'undefined' ) {
 
 			// not in the same row
-			if( previewPos !== position ) {
+			if( previewPos !== position || true ) {
 				// if position > previewPos then we need to take te current preview´s height in consideration when scrolling the window
 				if( position > previewPos ) {
 					scrollExtra = preview.height;
@@ -344,7 +344,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">View Site</a>' );
+			this.$href = $( '<a href="#" target="_blank">Launch App</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );

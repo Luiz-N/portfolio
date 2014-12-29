@@ -1,4 +1,5 @@
 // @import "../../../_sass/vendor/import.scss";
+$images: DC drinkplan headlines route reddesigned onion other;
 @-webkit-keyframes bounce { 
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
     40% {-webkit-transform: translateY(-10px);} 
@@ -13,13 +14,29 @@
 $h1-size: 3em;
 $h2-size: 2em;
 
-// $header-color: rgba(0,128,128,.8);
+$blue: hsla(206,56,50,1);
 $header-color: hsla(206,56,50,.8);
 $trans-header: hsla(206,56,50,.5);
 $cool-dark: rgb(49,49,48);
 $solid-white: hsla(0,0,96,1);
 $trans-white: hsla(0,0,96,.75);
 $dark-color: #474843;
+$asset-path: "../images/";
+
+@for $i from 1 through length($images) {
+		.og-grid li:nth-of-type(#{$i}) {
+			.og-fullimg{
+				// background-image: 'images/'nth($images, $i)+'.jpg';
+				background-image: url(../images/#{$i}.png);
+			}
+	}
+}
+
+//hack for removing stats app button
+#statsApp .og-expander a{
+	display: none;
+}
+
 
 
 button.sliding-menu-button{
@@ -57,6 +74,7 @@ button.sliding-menu-button{
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	// background-color:currentColor;
 	background-color: $cool-dark;
+	// background-color: $solid-white;
 }
 
 nav.sidePanel{
@@ -126,8 +144,8 @@ nav.sidePanel{
 				font-size: $h1-size;
 				font-family: lato;
 				// pointer-events: none;
-				color: $solid-white;
-				opacity: .9;
+				color: $trans-white;
+				// opacity: .9;
 				// padding-bottom: 20px;
 				// border-bottom: 1px solid rgba(255,255,255,0.5);
 			}
@@ -298,17 +316,81 @@ nav.sidePanel{
 			& li{
 					height: 5%;
 					max-width: 33%;
+					&.og-expanded > a::after{
+						border-bottom-color: $solid-white;
+						margin-top: -19px;
+					}
 				a{
-					border: 1px solid $trans-white;
+					border: 1px solid $solid-white;
+				}
+				.og-loading{
+					display: none !important;
 				}
 			}
-		}
-		.og-expander{
-			background: $solid-white;
-			color: $cool-dark;
-			p{
-				// color: $cool-dark;
-			}	
+			.og-expander{
+				background: $solid-white;
+				color: $cool-dark;
+				z-index: 1;
+				h3{
+					padding: 0;
+					line-height: initial;
+				}
+				a{
+					border: 3px solid $cool-dark;
+					margin-top: 1em;
+				}
+				& .og-expander-inner{
+					padding: 1em .5em;
+					.og-close{
+						z-index: 1;
+					}
+					.og-fullimg{
+						background-repeat: no-repeat;
+						background-size: cover;
+						border: 3px solid $cool-dark;
+						img{
+							display: none !important;
+						}
+					}
+					.og-details{
+						padding: 0.75em;
+						padding-left: 1em;
+						overflow-y: scroll;
+						p{
+							margin-bottom: 0;
+							a{
+								font-weight: 300;
+								font-size: 1em;
+								color: #333;
+								text-transform: none;
+								letter-spacing: 1px;
+								padding: 0;
+								border: none;
+								display: inline;
+								margin: 0;
+								outline: none;
+								text-decoration: underline;
+								&:before{
+									content: none;
+								}
+							}
+							ul{
+								li{
+									max-width: 100%;
+									width: 100%;
+									display: list-item;
+									list-style-position: inside;
+									margin: 0;
+								}
+							}
+							h4{
+								font-weight: 300;
+								margin: .25em 0;
+							}
+						}
+					}		
+				}
+			}
 		}
 	}
 }

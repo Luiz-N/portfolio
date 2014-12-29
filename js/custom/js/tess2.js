@@ -5,7 +5,7 @@ buildTess = function(width,height){
     var svg;
     var path,path2,path3;
     var animate;
-    var points = 45;
+    var points = 50;
     var width = width,
       height = height;
     var vertices,

@@ -343,6 +343,7 @@ path {
   pointer: none;
   /*stroke: rgba(34,34,34,.25);*/
   stroke: grey;
+  /*stroke: whitesmoke;*/
   /*mix-blend-mode: screen;*/
   /*filter: url(#blend);*/
   /*stroke: red;*/
@@ -367,9 +368,10 @@ g path:first-child {
 }
 
 
-g path:nth-child(4n) {
+g path:nth-child(5n) {
   /*fill: rgba(34,34,34,0);*/
   fill: #3A89C9
+  /*fill: rgb(49,49,48);*/
   /*stroke: none;*/
 }
 
@@ -409,6 +411,30 @@ g path:last-child {
   60% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px); } }
+.og-grid li:nth-of-type(1) .og-fullimg {
+  background-image: url(../images/1.png); }
+
+.og-grid li:nth-of-type(2) .og-fullimg {
+  background-image: url(../images/2.png); }
+
+.og-grid li:nth-of-type(3) .og-fullimg {
+  background-image: url(../images/3.png); }
+
+.og-grid li:nth-of-type(4) .og-fullimg {
+  background-image: url(../images/4.png); }
+
+.og-grid li:nth-of-type(5) .og-fullimg {
+  background-image: url(../images/5.png); }
+
+.og-grid li:nth-of-type(6) .og-fullimg {
+  background-image: url(../images/6.png); }
+
+.og-grid li:nth-of-type(7) .og-fullimg {
+  background-image: url(../images/7.png); }
+
+#statsApp .og-expander a {
+  display: none; }
+
 button.sliding-menu-button {
   background: none;
   top: 0;
@@ -488,8 +514,7 @@ nav.sidePanel {
       #page-wrapper div.top div.name h1 {
         font-size: 3em;
         font-family: lato;
-        color: whitesmoke;
-        opacity: .9; }
+        color: rgba(245, 245, 245, 0.75); }
     #page-wrapper div.top a.arrow {
       position: absolute;
       height: 80px;
@@ -615,11 +640,62 @@ nav.sidePanel {
       #page-wrapper div.inner-wrapper .og-grid li {
         height: 5%;
         max-width: 33%; }
+        #page-wrapper div.inner-wrapper .og-grid li.og-expanded > a::after {
+          border-bottom-color: whitesmoke;
+          margin-top: -19px; }
         #page-wrapper div.inner-wrapper .og-grid li a {
-          border: 1px solid rgba(245, 245, 245, 0.75); }
-    #page-wrapper div.inner-wrapper .og-expander {
-      background: whitesmoke;
-      color: #313130; }
+          border: 1px solid whitesmoke; }
+        #page-wrapper div.inner-wrapper .og-grid li .og-loading {
+          display: none !important; }
+      #page-wrapper div.inner-wrapper .og-grid .og-expander {
+        background: whitesmoke;
+        color: #313130;
+        z-index: 1; }
+        #page-wrapper div.inner-wrapper .og-grid .og-expander h3 {
+          padding: 0;
+          line-height: initial; }
+        #page-wrapper div.inner-wrapper .og-grid .og-expander a {
+          border: 3px solid #313130;
+          margin-top: 1em; }
+        #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner {
+          padding: 1em .5em; }
+          #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-close {
+            z-index: 1; }
+          #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-fullimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 3px solid #313130; }
+            #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-fullimg img {
+              display: none !important; }
+          #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-details {
+            padding: 0.75em;
+            padding-left: 1em;
+            overflow-y: scroll; }
+            #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-details p {
+              margin-bottom: 0; }
+              #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-details p a {
+                font-weight: 300;
+                font-size: 1em;
+                color: #333;
+                text-transform: none;
+                letter-spacing: 1px;
+                padding: 0;
+                border: none;
+                display: inline;
+                margin: 0;
+                outline: none;
+                text-decoration: underline; }
+                #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-details p a:before {
+                  content: none; }
+              #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-details p ul li {
+                max-width: 100%;
+                width: 100%;
+                display: list-item;
+                list-style-position: inside;
+                margin: 0; }
+              #page-wrapper div.inner-wrapper .og-grid .og-expander .og-expander-inner .og-details p h4 {
+                font-weight: 300;
+                margin: .25em 0; }
 
 #center {
   margin: 0 auto; }

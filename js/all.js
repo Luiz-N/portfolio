@@ -879,7 +879,7 @@ var Grid = (function() {
 		if( typeof preview != 'undefined' ) {
 
 			// not in the same row
-			if( previewPos !== position ) {
+			if( previewPos !== position || true ) {
 				// if position > previewPos then we need to take te current preview´s height in consideration when scrolling the window
 				if( position > previewPos ) {
 					scrollExtra = preview.height;
@@ -923,7 +923,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">View Site</a>' );
+			this.$href = $( '<a href="#" target="_blank">Launch App</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -1177,7 +1177,7 @@ buildTess = function(width,height){
     var svg;
     var path,path2,path3;
     var animate;
-    var points = 45;
+    var points = 50;
     var width = width,
       height = height;
     var vertices,
@@ -1248,7 +1248,7 @@ buildTess = function(width,height){
         })
         .on('mouseleave', function() {
           console.log("mouseleave");
-          // animate  = setInterval(function(){render();}, 5);
+          animate  = setInterval(function(){render();}, 5);
         })
         .call(drag);
       path = svg.append("g").selectAll("path");

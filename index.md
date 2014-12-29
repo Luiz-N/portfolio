@@ -6,7 +6,7 @@ title: "Luiz Neves"
 <!-- <h1>Main Page</h1> -->
 
 <div class="top">
-	<div class="name">
+	<div class="name"> 
 		<h1>Luiz Neves</h1>
 	</div>
 	<a class="arrow" href="#About"><span class="glyphyicon"></span></a>
