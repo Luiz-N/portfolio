@@ -15,11 +15,11 @@ title: "Luiz Neves"
 	<div id="About" class="container">
 		<div  class="info section">
 			<h1>Hi, there.</h1>
-			<p class="teaser">I'm a creative, full-stack web developer</p>
+			<p class="teaser">I'm a creative, full-stack web developer.</p>
 			<hr>
 			<div class="text">
 				<h2>About Me</h2>
-				<p>I specialize in data-centric web applications; everything from scraping, transforming, to visualizing data. I also enjoy getting creative with code like the fancy visualization you see above.</p>
+				<p>As a generalist I use (and learn when necessary) whatever the right tool is for a job. My favorite projects are usually interactive, data-centric, and on the web. I do a lot of scraping, transforming, and visualizing data. I also enjoy creating art made from code such as the layered <a href="http://bl.ocks.org/mbostock/4060366" target="_blank">voroni tessellation</a> you see above.</p>
 			</div>
 			<div class="image">
 				<img src="images/me.png" alt="">
@@ -54,7 +54,7 @@ title: "Luiz Neves"
 	<div id="Contact" class="container">
 		<div class="contact section">
 			<h1>Contact</h1>
-			<p class="teaser">You can find me here</p>
+			<p class="teaser">Want to work on a project together? You can find me here.</p>
 			<hr>
 			<div class="links clearfix">
 				<div class="col1">
@@ -64,7 +64,7 @@ title: "Luiz Neves"
 								<span class="icon icon-twitter"></span></a>
 						</li>
 						<li>
-							<a href="linkedin.nl/in/luizneves7/" target="_blank">
+							<a href="http://linkedin.com/in/luizneves7/" target="_blank">
 								<span class="icon icon-linkedin"></span></a>
 						</li>
 					</ul>

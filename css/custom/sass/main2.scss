@@ -247,6 +247,9 @@ nav.sidePanel{
 				}
 				p{
 					padding: 0 .5em;
+					a{
+						text-decoration: underline;
+					}
 				}
 			.text{
 					width: 35%;
@@ -325,6 +328,9 @@ nav.sidePanel{
 				}
 				.og-loading{
 					display: none !important;
+				}
+				img{
+					width: 100%;
 				}
 			}
 			.og-expander{

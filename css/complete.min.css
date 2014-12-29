@@ -591,6 +591,8 @@ nav.sidePanel {
         color: rgba(56, 137, 199, 0.8); }
     #page-wrapper div.inner-wrapper .info p {
       padding: 0 .5em; }
+      #page-wrapper div.inner-wrapper .info p a {
+        text-decoration: underline; }
     #page-wrapper div.inner-wrapper .info .text {
       width: 35%; }
     #page-wrapper div.inner-wrapper .info .image {
@@ -647,6 +649,8 @@ nav.sidePanel {
           border: 1px solid whitesmoke; }
         #page-wrapper div.inner-wrapper .og-grid li .og-loading {
           display: none !important; }
+        #page-wrapper div.inner-wrapper .og-grid li img {
+          width: 100%; }
       #page-wrapper div.inner-wrapper .og-grid .og-expander {
         background: whitesmoke;
         color: #313130;
