@@ -360,10 +360,6 @@ path {
 }
  
 g path:first-child {
-  /*mix-blend-mode: darken;*/
-
-  /*fill: salmon;*/
-  /*stroke: none;*/
   stroke-opacity: .4;
 }
 
