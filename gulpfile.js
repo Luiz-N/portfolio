@@ -56,7 +56,7 @@ gulp.task('compileCSS',['cleanCSS'],function() {
             cascade: false
         }).on('error',gutil.log))
 		.pipe(rename({suffix: '.min'}))
-		// .pipe(minifycss())        
+		// .pipe(minifycss())
 		.pipe(concat('complete.min.css'))
         .pipe(gulp.dest('_site/css'))
 		.pipe(browserSync.reload({stream:true}));
@@ -95,7 +95,7 @@ gulp.task('compileJS',['cleanJS'], function() {
 // .pipe(gulp.dest('javascripts'))
 // .pipe(notify({ message: 'Scripts task complete' }));
 });
- 
+
 
  gulp.task('copyJS',function() {
     return gulp.src('js/custom/js/*.js')
@@ -112,7 +112,7 @@ gulp.task('jekyll-build', function (done) {
 return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
 .on('close', done);
 });
- 
+
 /**
 * Rebuild Jekyll & do page reload
 */
@@ -120,7 +120,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 return runSequence(['buildSass','brewCoffee']);
 // browserSync.reload();
 });
- 
+
 /**
 * Wait for jekyll-build, then launch the Server
 */
@@ -132,7 +132,7 @@ baseDir: '_site'
 host: "localhost"
 });
 });
- 
+
 gulp.task('watch', function() {
 // Watch .sass files
 gulp.watch('css/**/*.scss', ['buildSass']);
@@ -145,8 +145,8 @@ gulp.watch('js/custom/js/*.js', ['copyJS']);
 gulp.watch('_site/js/custom/**/*.js', ['compileJS']);
 gulp.watch(['**/*.md', '_includes/*.html','_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
- 
+
 gulp.task('default', ['jekyll-build'], function() {
 // gulp.start('brewCoffee','watch','browser-sync');
-return runSequence(['buildSass','brewCoffee'],['browser-sync','watch'],'compileCSS');
+return runSequence(['buildSass','brewCoffee'],['browser-sync'],'compileCSS');
 });
