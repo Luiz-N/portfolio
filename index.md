@@ -19,7 +19,7 @@ title: "Luiz Neves"
       <hr>
       <div class="text">
         <h2>About Me</h2>
-        <p>As a generalist I use (and learn when necessary) whatever the right tool is for a job. My favorite projects are usually interactive, data-centric, and on the web. I do a lot of scraping, transforming, and visualizing data. I also enjoy creating art from code such as the layered <a href="http://codepen.io/Luiz-N/pen/QwKPOM" target="_blank">voroni tessellation</a> you see above.</p>
+        <p>As a generalist I use (and learn when necessary) whatever the right tool is for a job. My favorite projects are usually interactive, data-centric, and on the web. I do a lot of scraping, transforming, and visualizing data. I also like opportunities to mix <a href="http://codepen.io/Luiz-N/pen/QwKPOM" target="_blank">technology and art.</a></p>
       </div>
       <div class="image">
         <img src="images/me.png" alt="">
