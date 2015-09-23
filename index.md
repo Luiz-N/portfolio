@@ -19,7 +19,7 @@ title: "Luiz Neves"
       <hr>
       <div class="text">
         <h2>About Me</h2>
-        <p>As a generalist I use (and learn when necessary) whatever the right tool is for a job. My favorite projects are usually interactive, data-centric, and on the web. I do a lot of scraping, transforming, and visualizing data. I also like mixing <a href="http://codepen.io/Luiz-N/pen/QwKPOM" target="_blank">technology with art.</a></p>
+        <p>As a generalist I use (and learn when necessary) whatever the right tool is for a job. My favorite projects are usually interactive, data-centric, and on the web. I like ember, python, and visualizing data. I also like when technology <a href="http://codepen.io/Luiz-N/pen/QwKPOM" target="_blank">mixes with art.</a></p>
       </div>
       <div class="image">
         <img src="images/me.png" alt="">
